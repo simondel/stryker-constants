@@ -1,5 +1,5 @@
-module.exports = function(config){
-  config.set({
+module.exports = function (config) {
+	config.set({
 		coverageAnalysis: "off",
 		htmlReporter: {
 			baseDir: 'docs/mutation'

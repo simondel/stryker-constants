@@ -1,7 +1,7 @@
 /**
  * CONSTANTS test file
  */
-import { NUMBERS, HTTP_STATUS } from './CONSTANTS';
+import { NUMBERS } from './CONSTANTS';
 export interface IConstantsTestData {
 	Text:string;
 	Value:{};
@@ -76,13 +76,5 @@ describe('CONSTANTS', () => {
 		it('Negative Unary operator should work', () => {
 			expect(-NUMBERS.ONE).toBe(-1);
 		});
-	});
-
-	it('Test statuscodes', () => {
-		expect(HTTP_STATUS.OK).toBe('OK');
-		expect(HTTP_STATUS.BAD_REQUEST).toBe('Bad Request');
-		expect(HTTP_STATUS.NOT_FOUND).toBe('Not Found');
-		expect(HTTP_STATUS.SERVER_ERROR).toBe('Server Error');
-		expect(HTTP_STATUS.GATEWAY_TIMEOUT).toBe('Gateway Timeout');
 	});
 });
